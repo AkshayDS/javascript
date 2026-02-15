@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="cali.css">
+  <title>My calci</title>
+</head>
+<body>
+  <div id="my_calci">
+  
+  <input type="text" id="show" readonly >
+  <div id="container">
+  <button class="butt" onclick="new_val='';
+  document.querySelector('#show').value=new_val;" style="background-color: rgb(1, 199, 199);">c</button>
+
+  <button class="butt" onclick="new_val=new_val+'9';
+  document.querySelector('#show').value=new_val;">9</button>
+
+  <button class="butt" onclick="new_val=new_val+'8';
+  document.querySelector('#show').value=new_val;">8</button>
+
+  <button class="butt" onclick="new_val=new_val+'+';
+  document.querySelector('#show').value=new_val;" style="background-color: rgb(2, 142, 25);">+</button>
+
+  <button class="butt" onclick="new_val=new_val+'7';
+  document.querySelector('#show').value=new_val;">7</button>
+
+  <button class="butt" onclick="new_val=new_val+'6';
+  document.querySelector('#show').value=new_val;">6</button>
+
+  <button class="butt" onclick="new_val=new_val+'5';
+  document.querySelector('#show').value=new_val;">5</button>
+  <button class="butt" onclick="new_val=new_val+'-';
+  document.querySelector('#show').value=new_val;" style="background-color: rgb(2, 142, 25);">-</button>
+
+  <button class="butt" onclick="new_val=new_val+'4';
+  document.querySelector('#show').value=new_val;">4</button>
+
+  <button class="butt" onclick="new_val=new_val+'3';
+  document.querySelector('#show').value=new_val;">3</button>
+
+  <button class="butt" onclick="new_val=new_val+'2';
+  document.querySelector('#show').value=new_val;">2</button>
+
+  <button class="butt" onclick="new_val=new_val+'*';
+  document.querySelector('#show').value=new_val;" style="background-color: rgb(2, 142, 25);">*</button>
+
+  <button class="butt" onclick="new_val=new_val+'1';
+  document.querySelector('#show').value=new_val;">1</button>
+
+  <button class="butt" onclick="new_val=new_val+'0';
+  document.querySelector('#show').value=new_val;">0</button>
+
+  <button class="butt" onclick="new_val=new_val+'.';
+  document.querySelector('#show').value=new_val;">.</button>
+
+  <button class="butt" onclick="new_val=new_val+'/';
+  document.querySelector('#show').value=new_val;" style="background-color: rgb(2, 142, 25);">/</button>
+
+  <button class="butt" onclick=" let result=eval(new_val);
+    new_val=result;
+    document.querySelector('#show').value=new_val;" >=</button>
+  </div>
+  </div>
+<script>
+  let new_val='';
+  document.querySelector('#show').value=new_val;
+  
+
+
+</script>
+</body>
+</html>
