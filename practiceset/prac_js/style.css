@@ -1,0 +1,21 @@
+h1 {
+  background-color: aqua;
+}
+
+#clickk {
+
+  border-color: black;
+  border-radius: 7px;
+  padding: 5px 35px;
+  background-color: white;
+  border-style: double;
+}
+
+.cl-1 {
+  background-color: rgb(23, 250, 23);
+  padding: 6px 20px;
+  border-radius: 13px;
+  border-style: none;
+  text-align: center;
+  font-weight: 500;
+}
