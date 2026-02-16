@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="cricket.css">
+  <title>Cricket</title>
+</head>
+<style>
+
+</style>
+
+<body>
+  <h1> Cricket Game...</h1>
+  <button  onclick="
+  
+  var random= Math.random()*3;
+  var ai_choose;
+  if(random>0 &&random<=1){
+    ai_choose='BAT';
+    
+  }
+  else if(random>1 && random<=2){
+    ai_choose='BALL';
+    
+  }else{
+    ai_choose='WICKET';
+    
+  }
+
+
+  var result;
+  if(ai_choose==='BALL'){
+    result='USER WON';
+  }else if(ai_choose==='WICKET'){
+    result='AI WON';
+  }else{
+    result='MATCH DRAW';
+  }
+
+  alert(`You choose BAT. Ai choose is ${ai_choose} and ${result}`)
+
+  
+  "> BAT</button>
+
+  <button  onclick="
+  
+  var random= Math.random()*3;
+  var ai_choose;
+  if(random>0 &&random<=1){
+    ai_choose='BAT';
+    
+  }
+  else if(random>1 && random<=2){
+    ai_choose='BALL';
+    
+  }else{
+    ai_choose='WICKET';
+    
+  }
+
+
+  var result;
+  if(ai_choose==='BALL'){
+    result='MATCH DRAW';
+  }else if(ai_choose==='WICKET'){
+    result='USER WON';
+  }else{
+    result='AI WON';
+  }
+
+  alert(`You choose BALL. Ai choose is ${ai_choose} and ${result}`)
+
+  
+  "> BALL</button>
+  <button  onclick="
+  
+  var random= Math.random()*3;
+  var ai_choose;
+  if(random>0 &&random<=1){
+    ai_choose='BAT';
+    
+  }
+  else if(random>1 && random<=2){
+    ai_choose='BALL';
+    
+  }else{
+    ai_choose='WICKET';
+    
+  }
+
+
+  var result;
+  if(ai_choose==='BALL'){
+    result='AI WON';
+  }else if(ai_choose==='WICKET'){
+    result='MATCH DRAW';
+  }else{
+    result='USER WON';
+  }
+
+  alert(`You choose WICKET. Ai choose is ${ai_choose} and ${result}`)
+
+  
+  "> WICKET</button>
+</body>
+
+</html>
