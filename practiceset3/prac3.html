@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practiceset3</title>
+</head>
+<body>
+  <h1>Discount for Metro Ticket</h1>
+  <script>
+    let age = prompt();
+    let price=100;
+    let gender = "Female";
+    let result;
+    let dis;
+
+    if(age<=5){
+      result='0';
+      dis='0%'
+    }
+    else if(age>65 && gender === 'Female'){
+      result=(price-((80/100)*price));
+      dis='80%'
+
+    }else if(age>65){
+      result=(price-((30/100)*price));
+      dis='30%'
+    }
+    else if(gender ==='Female'|| age<=8){
+      result=(price-((50/100)*price));
+      dis='50%'
+    }
+    
+    else {
+      result=(price-((0/100)*price));
+      dis='0%'
+    }
+
+    console.log(`The ticket price is rs ${price} and you get ${dis} discount , so the final amount is RS ${result}`)
+      
+
+  </script>
+  
+</body>
+</html>
