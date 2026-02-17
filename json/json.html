@@ -7,6 +7,22 @@
 </head>
 <body>
   <script>
+    // let items={
+    //   name:'T-shirt',
+    //   color:'Red',
+    //   type:{
+    //     size:'Oversize',
+    //     neck:'round'
+    //   }
+    // }
+    // console.log(items)
+    // let convert=JSON.stringify(items)
+    // console.log(convert)
+
+    // let newconversion=JSON.parse(convert)
+    // console.log(newconversion)
+
+
     let items={
       name:'T-shirt',
       color:'Red',
@@ -14,13 +30,10 @@
         size:'Oversize',
         neck:'round'
       }
-    }
-    console.log(items)
-    let convert=JSON.stringify(items)
-    console.log(convert)
-
-    let newconversion=JSON.parse(convert)
-    console.log(newconversion)
+    };
+    localStorage.setItem('items',JSON.stringify(items));
+    console.log(localStorage.getItem('name'));
+    console.log(localStorage.getItem('items'));
   </script>
 </boy>
 </html>
