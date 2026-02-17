@@ -34,6 +34,10 @@
       lost:0,
       tie:0,
 
+      display:function(){
+        return `No of Match Won:${score.win}, Lost:${score.lost}, Tie:${score.tie}`
+      }
+
     } 
 
     function generateComputerChoice() {
@@ -91,7 +95,7 @@
       
       ${result}
       
-      Won:${score.win}, Lost:${score.lost}, Tie:${score.tie}`);
+      ${score.display()}`);
     }
   </script>
 </body>
