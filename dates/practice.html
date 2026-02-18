@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #button-click {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      border-radius: 70px;
+    }
+
+    .odd {
+      background-color: #f77402;
+    }
+
+    .even {
+      background-color: #0030ce
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="message"></h1>
+  <button id="button-click" onclick="buttonPressed()">0</button>
+  <h3 id="record"></h3>
+  <script>
+    let noofcilck = localStorage.getItem('noofcilck')|| 0;
+
+    function buttonPressed() {
+      noofcilck++;
+      localStorage.setItem('noofcilck',noofcilck )
+      updatebutton();
+    }
+    function updatebutton() {
+      
+        let button = document.querySelector('#button-click');
+        if (noofcilck % 2 === 0) {
+          button.classList.remove('odd')
+          button.classList.add('even')
+        } else {
+          button.classList.remove('even')
+          button.classList.add('odd')
+        }
+        button.innerHTML = noofcilck;
+      }
+      updatebutton();
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function greeting(name = 'Dear') {
+      let date = new Date();
+      console.log(date)
+
+      let hour = date.getHours()
+      console.log(hour)
+      let newmesage = document.querySelector('#message');
+      if (hour > 5 && hour < 12) {
+        newmesage.innerText = `Good Morning ${name}`
+      } else if (hour >= 12 && hour < 17) {
+        newmesage.innerText = `Good Afternoon ${name}`
+      } else if (hour >= 17 && hour < 21) {
+        newmesage.innerText = `Good Evening ${name}`
+      } else {
+        newmesage.innerText = `Good Night ${name}`
+      }
+    }
+    greeting('akshay')
+  </script>
+
+</body>
+
+</html>
